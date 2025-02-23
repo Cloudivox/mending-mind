@@ -1,5 +1,7 @@
 import line from "../../assets/images/goal-section-line.png";
-import heading from "../../assets/images/goal-section-heading.png";
+import goal1 from "../../assets/images/goal-img-1.png";
+import goal2 from "../../assets/images/goal-img-2.png";
+import goal3 from "../../assets/images/goal-img-3.png";
 
 function GoalSection() {
   return (
@@ -18,6 +20,83 @@ function GoalSection() {
           </p>
           <div className="absolute left-1/2 -translate-x-1/2 mt-2">
             <img src={line} alt="line" />
+          </div>
+        </div>
+      </div>
+      <div className="min-h-screen bg-white p-8">
+        <div className="max-w-6xl mx-auto">
+          {/* First Row with Side Image */}
+          <div className="flex flex-col md:flex-row items-end">
+            <div className="md:w-1/4">
+              <h2 className="text-2xl font-bold mb-2 font-montserrat">
+                All Inclusive?
+              </h2>
+              <p className="text-lg text-gray-700 relative inline-block font-montserrat">
+                Safe space for all.
+              </p>
+            </div>
+
+            <div className="md:w-1/2">
+              <div className="">
+                <img
+                  src={goal1}
+                  alt="Inclusive community"
+                  className="w-full h-full object-cover rounded-2xl"
+                />
+              </div>
+            </div>
+
+            {/* Middle Image (positioned to the right) */}
+            <div className="md:w-1/2 md:mt-12">
+              <div className="text-center mb-4">
+                <h2 className="text-2xl font-bold mb-2 font-montserrat">
+                  When? Where?
+                </h2>
+                <p className="text-lg text-gray-700 font-montserrat">
+                  Meet us online or offline
+                  <br />
+                  in Mumbai.
+                </p>
+              </div>
+              <div className="">
+                <img
+                  src={goal2}
+                  alt="Confidential meetings"
+                  className="w-full h-full object-cover rounded-2xl"
+                />
+              </div>
+            </div>
+          </div>
+
+          {/* Second Row with Center Image */}
+          <div className="flex flex-col md:flex-row items-center">
+            <div className="md:w-1/3 text-left">
+              <h2 className="text-2xl font-bold mb-2 font-montserrat">
+                100% Confidential?
+              </h2>
+              <p className="text-lg text-gray-700 gap-2 font-montserrat">
+                That goes without saying.
+              </p>
+            </div>
+
+            <div className="md:w-1/2">
+              <div className="">
+                <img
+                  src={goal3}
+                  alt="Professional support"
+                  className="w-full h-full object-cover rounded-2xl"
+                />
+              </div>
+            </div>
+
+            <div className="md:w-1/3 text-center">
+              <h2 className="text-2xl font-bold mb-2 relative inline-block font-montserrat">
+                Personalized Attention?
+              </h2>
+              <p className="text-lg text-gray-700 font-montserrat">
+                Above and beyond.
+              </p>
+            </div>
           </div>
         </div>
       </div>
