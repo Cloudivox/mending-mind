@@ -129,7 +129,7 @@ function App() {
               </a>
               <div className="pt-2">
                 <svg
-                className="ml-[120px]"
+                  className="ml-[120px]"
                   xmlns="http://www.w3.org/2000/svg"
                   width="48"
                   height="48"

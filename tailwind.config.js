@@ -19,6 +19,16 @@ export default {
         playfair: ["Playfair Display", "serif"],
         montserrat: ["Montserrat", "sans-serif"],
       },
+      spacing: {
+        '17': '4.25rem', // Custom spacing for the image
+      },
+      screens: {
+        'sm': '350px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
+      },
     },
   },
   plugins: [],
