@@ -89,8 +89,8 @@ function GoalSection() {
               </div>
             </div>
 
-            <div className="md:w-1/3 text-center">
-              <h2 className="text-2xl font-bold mb-2 relative inline-block font-montserrat">
+            <div className="md:w-1/3 text-center mt-10">
+              <h2 className="text-2xl font-bold mb-2 relative inline-block font-montserrat mt-10">
                 Personalized Attention?
               </h2>
               <p className="text-lg text-gray-700 font-montserrat">
