@@ -53,3 +53,49 @@
 .menu-icon.open span:last-child {
   transform: rotate(-45deg) translate(7px, -7px);
 }
+
+@layer utilities {
+  .animate-background-shift {
+    background: linear-gradient(
+      90deg,
+      #fff8e5 0%,
+      #fff2d6 25%,
+      #fff8e5 50%,
+      #fff2d6 75%,
+      #fff8e5 100%
+    );
+    background-size: 200% 100%;
+    animation: shiftBackground 3s linear infinite;
+  }
+
+  .text-focus-animation {
+    text-shadow: 0 0 0 rgba(0,0,0,0);
+    transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .text-focus-animation:hover {
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    letter-spacing: 0.3px;
+  }
+
+  @keyframes shiftBackground {
+    0% {
+      background-position: 0% 0%;
+    }
+    100% {
+      background-position: 200% 0%;
+    }
+  }
+
+  .scale-content {
+    transition: all 0.5s ease;
+  }
+
+  .scale-content:hover p {
+    transform: scale(1.05);
+  }
+
+  .card-overlay {
+    backdrop-filter: blur(4px);
+  }
+}

@@ -12,7 +12,7 @@ function Home() {
       <HeroSection />
       <GoalSection />
       <GrowthSection />
-      {/* <HealingSection/> */}
+      <HealingSection/>
       <Footer />
     </div>
   );
