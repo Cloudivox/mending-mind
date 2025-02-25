@@ -16,11 +16,11 @@ function GrowthSection() {
 
   // We need actual indices that don't reset
   const nextSlide = useCallback(() => {
-    setCurrentIndex(current => current + 1);
+    setCurrentIndex((current) => current + 1);
   }, []);
 
   const prevSlide = useCallback(() => {
-    setCurrentIndex(current => current - 1);
+    setCurrentIndex((current) => current - 1);
   }, []);
 
   // Handle the infinite scrolling
@@ -31,20 +31,20 @@ function GrowthSection() {
       setTimeout(() => {
         setTransitionEnabled(false);
         setCurrentIndex(currentIndex - cards.length);
-        
+
         // Re-enable transition after the position reset
         setTimeout(() => {
           setTransitionEnabled(true);
         }, 50);
       }, 700); // This should match your transition duration
     }
-    
+
     // Handle going backwards
     if (currentIndex < 0) {
       setTimeout(() => {
         setTransitionEnabled(false);
         setCurrentIndex(currentIndex + cards.length);
-        
+
         setTimeout(() => {
           setTransitionEnabled(true);
         }, 50);
@@ -72,7 +72,7 @@ function GrowthSection() {
 
   // Calculate the transform value
   const getTransformValue = () => {
-    return `translateX(-${currentIndex * (100/3)}%)`;
+    return `translateX(-${currentIndex * (100 / 3)}%)`;
   };
 
   return (
@@ -99,24 +99,26 @@ function GrowthSection() {
       >
         <div className="overflow-hidden">
           <div
-            className={`flex ${transitionEnabled ? 'transition-transform duration-700 ease-in-out' : ''}`}
+            className={`flex ${
+              transitionEnabled
+                ? "transition-transform duration-700 ease-in-out"
+                : ""
+            }`}
             style={{ transform: getTransformValue() }}
           >
             {/* Create a looping effect by having three sets of cards */}
-            {[...cards, ...cards, ...cards].map(
-              (card, index) => (
-                <div
-                  key={index}
-                  className="flex-none w-1/3 px-2 transform transition-transform duration-500 hover:scale-105"
-                >
-                  <div className="bg-[#b9e3e5] rounded-lg py-3 px-4 text-center shadow-lg hover:shadow-xl transition-all">
-                    <span className="text-lg font-medium text-gray-800 uppercase">
-                      {card.text}
-                    </span>
-                  </div>
+            {[...cards, ...cards, ...cards].map((card, index) => (
+              <div
+                key={index}
+                className="flex-none w-1/3 px-2 transform transition-transform duration-500 hover:scale-105"
+              >
+                <div className="bg-[#b9e3e5] rounded-lg py-3 px-4 text-center shadow-lg hover:shadow-xl transition-all">
+                  <span className="text-lg font-medium text-gray-800 uppercase">
+                    {card.text}
+                  </span>
                 </div>
-              )
-            )}
+              </div>
+            ))}
           </div>
         </div>
 
@@ -154,6 +156,26 @@ function GrowthSection() {
             <path
               fill="currentColor"
               d="m13.172 12l-4.95-4.95l1.414-1.413L16 12l-6.364 6.364l-1.414-1.415z"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <div className="flex justify-center items-center">
+        <button className="inline-flex items-center justify-between px-6 py-3 bg-yellow-400 text-gray-900 rounded-lg font-bold text-l tracking-wide shadow-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
+          GET TO KNOW US BETTER
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6 ml-2"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M9 5l7 7-7 7"
             />
           </svg>
         </button>
