@@ -1,8 +1,10 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useState, useRef } from "react";
 
 function GrowthSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
+  const [transitionEnabled, setTransitionEnabled] = useState(true);
+  const totalSlides = useRef(0);
 
   const cards = [
     { text: "6 Years" },
@@ -12,27 +14,66 @@ function GrowthSection() {
     { text: "100% Success" },
   ];
 
+  // We need actual indices that don't reset
   const nextSlide = useCallback(() => {
-    setCurrentIndex((current) => (current + 1) % cards.length);
-  }, [cards.length]);
-  console.log(currentIndex, "c");
+    setCurrentIndex(current => current + 1);
+  }, []);
 
   const prevSlide = useCallback(() => {
-    setCurrentIndex((current) =>
-      current === 0 ? cards.length - 1 : current - 1
-    );
-  }, [cards.length]);
+    setCurrentIndex(current => current - 1);
+  }, []);
+
+  // Handle the infinite scrolling
+  useEffect(() => {
+    // We need to add a special case when we've gone through all slides
+    if (currentIndex >= cards.length * 2) {
+      // We disable transition temporarily, then jump back while maintaining visual position
+      setTimeout(() => {
+        setTransitionEnabled(false);
+        setCurrentIndex(currentIndex - cards.length);
+        
+        // Re-enable transition after the position reset
+        setTimeout(() => {
+          setTransitionEnabled(true);
+        }, 50);
+      }, 700); // This should match your transition duration
+    }
+    
+    // Handle going backwards
+    if (currentIndex < 0) {
+      setTimeout(() => {
+        setTransitionEnabled(false);
+        setCurrentIndex(currentIndex + cards.length);
+        
+        setTimeout(() => {
+          setTransitionEnabled(true);
+        }, 50);
+      }, 700);
+    }
+  }, [currentIndex, cards.length]);
 
   // Auto-rotation effect
   useEffect(() => {
     if (!isPaused) {
       const interval = setInterval(() => {
         nextSlide();
-      }, 3000); // Rotate every 3 seconds
+      }, 2000); // Rotate every 2 seconds as requested
 
       return () => clearInterval(interval);
     }
   }, [isPaused, nextSlide]);
+
+  // Initialize with duplicated cards for seamless looping
+  useEffect(() => {
+    // Start from the first set of cards in our duplicated array
+    setCurrentIndex(cards.length);
+    totalSlides.current = cards.length * 3;
+  }, [cards.length]);
+
+  // Calculate the transform value
+  const getTransformValue = () => {
+    return `translateX(-${currentIndex * (100/3)}%)`;
+  };
 
   return (
     <div className="w-full max-w-6xl mx-auto px-4 py-8 md:py-12">
@@ -58,11 +99,11 @@ function GrowthSection() {
       >
         <div className="overflow-hidden">
           <div
-            className="flex transition-transform duration-700 ease-in-out"
-            style={{ transform: `translateX(-${currentIndex * 33.33}%)` }}
+            className={`flex ${transitionEnabled ? 'transition-transform duration-700 ease-in-out' : ''}`}
+            style={{ transform: getTransformValue() }}
           >
-            {/* Duplicate the cards array to create the illusion of infinite scroll */}
-            {[...cards].map(
+            {/* Create a looping effect by having three sets of cards */}
+            {[...cards, ...cards, ...cards].map(
               (card, index) => (
                 <div
                   key={index}
