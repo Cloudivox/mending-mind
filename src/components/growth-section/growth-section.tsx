@@ -162,22 +162,20 @@ function GrowthSection() {
       </div>
 
       <div className="flex justify-center items-center">
-        <button className="inline-flex items-center justify-between px-6 py-3 bg-yellow-400 text-gray-900 rounded-lg font-bold text-l tracking-wide shadow-md transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg">
+        <button className="inline-flex items-center justify-between px-6 py-3 bg-[#efc345] text-gray-900 rounded-lg font-bold text-l tracking-wide shadow-md hover:bg-black hover:text-[#efc345]">
           GET TO KNOW US BETTER
           <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 ml-2"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M9 5l7 7-7 7"
-            />
-          </svg>
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 24 24"
+                      className="transform transition-transform duration-300 hover:scale-110"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="m13.172 12l-4.95-4.95l1.414-1.413L16 12l-6.364 6.364l-1.414-1.415z"
+                      />
+                    </svg>
         </button>
       </div>
     </div>
