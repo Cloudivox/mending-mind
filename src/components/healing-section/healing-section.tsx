@@ -33,7 +33,9 @@ export default function HealingSection() {
           <h1 className="text-5xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mt-4 md:mt-0 md:mr-[-60px] mb-[60px] md:mb-[60px] lg:mb-[50px] relative">
             HEALING HAPPENS HERE!
           </h1>
-          <Healing />
+          <span className="lg:-mb-16">
+            <Healing />
+          </span>
         </div>
 
         <p className="text-md md:text-base lg:text-lg text-center max-w-[280px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[900px] mx-auto leading-relaxed text-gray-700 font-monterrat">
