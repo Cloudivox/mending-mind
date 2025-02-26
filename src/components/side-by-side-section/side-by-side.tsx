@@ -26,7 +26,7 @@ function SideBySideSection() {
           <img
             src={sideSectionImage}
             alt="sidesection"
-            className="max-w-[500px] h-100 w-100 sm:h-48 sm:w-48 md:h-72 md:w-72 lg:h-100 lg:w-100"
+            className="max-w-[500px] h-full w-full sm:h-48 sm:w-48 md:h-72 md:w-72 lg:h-full lg:w-full"
           />
 
           {/* Steps - Different layout for mobile and desktop */}
