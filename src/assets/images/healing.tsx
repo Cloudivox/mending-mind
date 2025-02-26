@@ -8,6 +8,7 @@ function Healing() {
         .d { fill: #efc345; }
       `}</style>
       <svg
+        className="w-96 h-96 md:w-48 md:h-48 sm:w-36 sm:h-36 lg:w-96 lg:h-96"
         version="1.2"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 464 316"

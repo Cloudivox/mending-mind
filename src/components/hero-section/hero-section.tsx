@@ -14,7 +14,7 @@ function HeroSection() {
     return () => clearTimeout(timer);
   }, []);
   return (
-    <div className="mt-30">
+    <div className="mt-30 sm:mt-32">
       <img src={heroSestionImage} width={"100%"} alt="hero-section-image" />
       <div className="w-full max-w-[1536px] mx-auto px-4 sm:px-4 lg:px-8 mb-16">
         <div className="relative flex items-center justify-center py-8 sm:py-12">
