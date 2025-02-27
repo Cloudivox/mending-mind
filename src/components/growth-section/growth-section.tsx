@@ -76,17 +76,17 @@ function GrowthSection() {
   };
 
   return (
-    <div className="w-full max-w-6xl mx-auto px-4 py-8 md:py-12">
+    <div className="w-full max-w-6xl mx-auto px-4 py-8 md:py-12 mt-32">
       <div className="max-w-3xl mx-auto text-center">
         <p className="text-5xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6 flex items-center justify-center">
-          <span className="mr-3">PROMISING</span>
-          <span className="bg-[#99b5b4] text-white px-2 py-1 rounded-md">
+          <span className="mr-3 tracking-wide">PROMISING</span>
+          <span className="bg-[#99b5b4] text-white px-2 py-1 rounded-md tracking-wide">
             GROWTH
           </span>
         </p>
 
         <div className="relative">
-          <p className="text-4xl lg:text-4xl md:text-3xl sm:text-xl font-playfair italic">
+          <p className="text-3xl lg:text-3xl md:text-2xl sm:text-lg font-playfair italic tracking-wide">
             since day One
           </p>
         </div>
@@ -113,7 +113,7 @@ function GrowthSection() {
                 className="flex-none w-1/3 px-2 transform transition-transform duration-500 hover:scale-105"
               >
                 <div className="bg-[#b9e3e5] rounded-lg py-3 px-4 text-center shadow-lg hover:shadow-xl transition-all">
-                  <span className="text-lg font-medium text-gray-800 uppercase">
+                  <span className="text-lg font-bold text-gray-800 uppercase tracking-wide">
                     {card.text}
                   </span>
                 </div>
@@ -162,20 +162,20 @@ function GrowthSection() {
       </div>
 
       <div className="flex justify-center items-center">
-        <button className="inline-flex items-center justify-between px-6 py-3 bg-[#efc345] text-gray-900 rounded-lg font-bold text-l tracking-wide shadow-md hover:bg-black hover:text-[#efc345]">
+        <button className=" tracking-wide inline-flex items-center justify-between px-6 py-3 bg-[#efc345] text-gray-900 rounded-lg font-bold text-l tracking-wide shadow-md hover:bg-black hover:text-[#efc345]">
           GET TO KNOW US BETTER
           <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="32"
-                      height="32"
-                      viewBox="0 0 24 24"
-                      className="transform transition-transform duration-300 hover:scale-110"
-                    >
-                      <path
-                        fill="currentColor"
-                        d="m13.172 12l-4.95-4.95l1.414-1.413L16 12l-6.364 6.364l-1.414-1.415z"
-                      />
-                    </svg>
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            className="transform transition-transform duration-300 hover:scale-110"
+          >
+            <path
+              fill="currentColor"
+              d="m13.172 12l-4.95-4.95l1.414-1.413L16 12l-6.364 6.364l-1.414-1.415z"
+            />
+          </svg>
         </button>
       </div>
     </div>
