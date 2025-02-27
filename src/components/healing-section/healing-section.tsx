@@ -30,7 +30,7 @@ export default function HealingSection() {
     <>
       <div className="w-full max-w-[1200px] mx-auto px-4 md:px-6 lg:px-8 py-8 md:py-12 lg:py-16">
         <div className="flex flex-col-reverse items-center md:flex-row md:items-end md:justify-end">
-          <h1 className="text-5xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mt-4 md:mt-0 md:mr-[-60px] mb-[60px] md:mb-[60px] lg:mb-[50px] relative">
+          <h1 className="text-5xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center mt-4 md:mt-0 md:mr-[-60px] mb-[60px] md:mb-[60px] lg:mb-[50px] relative tracking-wide">
             HEALING HAPPENS HERE!
           </h1>
           <span className="lg:-mb-16">
@@ -38,7 +38,7 @@ export default function HealingSection() {
           </span>
         </div>
 
-        <p className="text-md md:text-base lg:text-lg text-center max-w-[280px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[900px] mx-auto leading-relaxed text-gray-700 font-monterrat">
+        <p className="text-md md:text-base lg:text-lg text-center max-w-[280px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[900px] mx-auto leading-relaxed text-gray-700 font-monterrat tracking-wide">
           When we say, 'We get you,' we truly mean it. Mending Mind isn't just a
           project—it's a vision that's personal, real, and rooted in the belief
           that no one should ever feel alone in their journey. Because everybody
@@ -69,7 +69,7 @@ export default function HealingSection() {
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
-              <p className="text-md sm:text-base font-medium text-gray-800 transition-all duration-500 text-focus-animation whitespace-nowrap overflow-hidden text-ellipsis font-montserrat">
+              <p className="text-md sm:text-base font-medium text-gray-800 transition-all duration-500 text-focus-animation whitespace-nowrap overflow-hidden text-ellipsis font-montserrat tracking-wide">
                 {testimonial.text}
               </p>
             </div>

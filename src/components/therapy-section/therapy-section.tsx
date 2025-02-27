@@ -1,4 +1,6 @@
 import quote from "../../assets/images/quote-mark.png";
+import curveLineSecond from "../../assets/images/curve-line-second.png";
+
 function TherapySection() {
   return (
     <div className="relative w-full">
@@ -16,7 +18,7 @@ function TherapySection() {
         <section className="bg-[#efc345] min-h-screen px-4 py-16 md:px-8 lg:px-16 relative overflow-hidden rounded-lg">
           {/* Header Section */}
           <div className="max-w-7xl mx-auto mb-16">
-            <div className="flex flex-col md:flex-row items-center justify-center gap-6">
+            <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-24">
               <div className="w-42 h-42 md:w-44 md:h-44 flex items-center justify-center p-2">
                 <img
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/_Group_%20(1)-ovUamOfqfehAG76IXPf2k36C2VOOJf.svg"
@@ -25,27 +27,34 @@ function TherapySection() {
                 />
               </div>
               <div className="text-center md:text-center">
-                <h1 className="text-5xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center font-bold text-black mb-2">
+                <h1 className="text-5xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center font-bold text-black mb-2 tracking-wide">
                   PROVIDING CARE
                 </h1>
-                <p className="text-2xl md:text-3xl italic text-black font-playfair">
-                  tailored to <span className="font-bold">Your</span> needs
-                </p>
+                <div className="flex justify-around">
+                  <p className="text-2xl md:text-3xl italic text-black font-playfair tracking-wide">
+                    tailored to <span className="font-bold">Your</span> needs
+                  </p>
+                  <img
+                    src={curveLineSecond}
+                    alt="line"
+                    className="-me-80 -mb-96 h-32"
+                  />
+                </div>
               </div>
             </div>
           </div>
 
           {/* Cards Section */}
-          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
+          <div className="-mt-16 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-10">
             {/* Personal Therapy Card */}
             <div className="bg-[#f8f1eb] rounded-3xl flex flex-col items-center justify-center h-full">
               <div className="flex-1 p-6 md:p-8">
-                <h2 className="text-xl md:text-2xl font-bold mb-4 text-center font-montserrat">
+                <h2 className="text-md md:text-lg font-bold mb-4 text-center font-montserrat tracking-wide">
                   PERSONAL THERAPY
                   <br />
                   SESSIONS
                 </h2>
-                <p className="text-center text-sm md:text-base font-montserrat">
+                <p className="text-center text-sm md:text-base font-montserrat tracking-wide">
                   For couples <br />
                   and individuals of all ages
                   <br />
@@ -62,7 +71,7 @@ function TherapySection() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <button className="absolute bottom-20 mb-5 bg-[#F4C430] text-black py-2 px-4 rounded-lg font-semibold hover:bg-[#efc345] transition-colors flex items-center justify-center gap-2 font-montserrat hover:bg-black hover:text-[#efc345]">
+                <button className="absolute bottom-20 mb-5 bg-[#F4C430] text-black py-2 px-4 rounded-lg font-semibold hover:bg-[#efc345] transition-colors flex items-center justify-center gap-2 font-montserrat hover:bg-black hover:text-[#efc345] tracking-wide">
                   KNOW MORE
                   <span className="text-xl">
                     <svg
@@ -85,12 +94,12 @@ function TherapySection() {
             {/* Wellness Programs Card */}
             <div className="bg-[#f8f1eb] rounded-3xl flex flex-col items-center justify-center h-full">
               <div className="flex-1  p-6 md:p-8">
-                <h2 className="text-xl md:text-2xl font-bold mb-4 text-center font-montserrat">
+                <h2 className="text-md md:text-lg font-bold mb-4 text-center font-montserrat tracking-wide">
                   WELLNESS PROGRAMS
                   <br />
                   FOR ALL SECTORS
                 </h2>
-                <p className="text-center text-sm md:text-base font-montserrat">
+                <p className="text-center text-sm md:text-base font-montserrat tracking-wide">
                   For corporates, schools,
                   <br />
                   hospitals, NGOs,
@@ -108,7 +117,7 @@ function TherapySection() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <button className="absolute bottom-20 mb-5 bg-[#F4C430] text-black py-2 px-4 rounded-lg font-semibold hover:bg-[#efc345] transition-colors flex items-center justify-center gap-2 font-montserrat hover:bg-black hover:text-[#efc345]">
+                <button className="absolute bottom-20 mb-5 bg-[#F4C430] text-black py-2 px-4 rounded-lg font-semibold hover:bg-[#efc345] transition-colors flex items-center justify-center gap-2 font-montserrat hover:bg-black hover:text-[#efc345] tracking-wide">
                   KNOW MORE
                   <span className="text-xl">
                     <svg
@@ -131,12 +140,12 @@ function TherapySection() {
             {/* Internships Card */}
             <div className="bg-[#f8f1eb] rounded-3xl flex flex-col items-center justify-center h-full">
               <div className="flex-1 p-6 md:p-8">
-                <h2 className="text-xl md:text-2xl font-bold mb-4 text-center font-montserrat">
+                <h2 className="text-md md:text-lg font-bold mb-4 text-center font-montserrat tracking-wide">
                   INTERNSHIPS &
                   <br />
                   COURSES
                 </h2>
-                <p className="text-center text-sm md:text-base font-montserrat">
+                <p className="text-center text-sm md:text-base font-montserrat tracking-wide">
                   For interested
                   <br />
                   individuals and aspiring
@@ -154,7 +163,7 @@ function TherapySection() {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <button className="absolute bottom-20 mb-5 bg-[#F4C430] text-black py-2 px-4 rounded-lg font-semibold hover:bg-[#efc345] transition-colors flex items-center justify-center gap-2 font-montserrat hover:bg-black hover:text-[#efc345]">
+                <button className="absolute bottom-20 mb-5 bg-[#F4C430] text-black py-2 px-4 rounded-lg font-semibold hover:bg-[#efc345] transition-colors flex items-center justify-center gap-2 font-montserrat hover:bg-black hover:text-[#efc345] tracking-wide">
                   KNOW MORE
                   <span className="text-xl">
                     <svg

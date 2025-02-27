@@ -48,49 +48,67 @@ function Footer() {
         <nav className="mb-8">
           <ul className="flex flex-wrap justify-center gap-x-4 gap-y-2 text-md md:text-base">
             <li>
-              <a href="/" className="hover:text-yellow-400">
+              <a href="/" className="hover:text-yellow-400 tracking-wide">
                 Home
               </a>
             </li>
             <li className="hidden md:block">|</li>
             <li>
-              <a href="/about" className="hover:text-yellow-400">
+              <a href="/about" className="hover:text-yellow-400 tracking-wide">
                 About
               </a>
             </li>
             <li className="hidden md:block">|</li>
             <li>
-              <a href="/therapy" className="hover:text-yellow-400">
+              <a
+                href="/therapy"
+                className="hover:text-yellow-400 tracking-wide"
+              >
                 Therapy Sessions
               </a>
             </li>
             <li className="hidden md:block">|</li>
             <li>
-              <a href="/community" className="hover:text-yellow-400">
+              <a
+                href="/community"
+                className="hover:text-yellow-400 tracking-wide"
+              >
                 Community
               </a>
             </li>
             <li className="hidden md:block">|</li>
             <li>
-              <a href="/corporate" className="hover:text-yellow-400">
+              <a
+                href="/corporate"
+                className="hover:text-yellow-400 tracking-wide"
+              >
                 Corporate
               </a>
             </li>
             <li className="hidden md:block">|</li>
             <li>
-              <a href="/internships" className="hover:text-yellow-400">
+              <a
+                href="/internships"
+                className="hover:text-yellow-400 tracking-wide"
+              >
                 Internships
               </a>
             </li>
             <li className="hidden md:block">|</li>
             <li>
-              <a href="/resources" className="hover:text-yellow-400">
+              <a
+                href="/resources"
+                className="hover:text-yellow-400 tracking-wide"
+              >
                 Resources
               </a>
             </li>
             <li className="hidden md:block">|</li>
             <li>
-              <a href="/contact" className="hover:text-yellow-400">
+              <a
+                href="/contact"
+                className="hover:text-yellow-400 tracking-wide"
+              >
                 Let's Talk
               </a>
             </li>
@@ -100,13 +118,13 @@ function Footer() {
         {/* Contact Information */}
         <div className="flex flex-col md:flex-row justify-center gap-4 mb-12 text-sm">
           <div className="bg-white text-black rounded px-4 py-2 font-bold">
-            <span>email : mendingminds.com</span>
+            <span className=" tracking-wide">email : mendingminds.com</span>
           </div>
           <div className="bg-white text-black rounded px-4 py-2 font-bold">
-            <span>Contact : 99999 99999</span>
+            <span className=" tracking-wide">Contact : 99999 99999</span>
           </div>
           <div className="bg-white text-black rounded px-4 py-2 font-bold">
-            <span>
+            <span className=" tracking-wide">
               Address : Flat No. 001, Shinghar Vastu, Mulund West, Mumbai - 80
             </span>
           </div>
@@ -114,20 +132,20 @@ function Footer() {
         <hr />
         {/* Disclaimer */}
         <div className="text-center text-md mb-8 px-4 mt-8">
-          <p>
+          <p className=" tracking-wide">
             Mending Mind does not provide crisis intervention or emergency
             support. If you or
           </p>
-          <p>
+          <p className=" tracking-wide">
             someone you know requires immediate assistance, please don't
             hesitate to seek help
           </p>
-          <p>from crisis support organizations.</p>
+          <p className=" tracking-wide">from crisis support organizations.</p>
         </div>
 
         {/* Emergency Contacts */}
         <div className="flex flex-col md:flex-row justify-center gap-4 text-sm text-center">
-          <div>
+          <div className=" tracking-wide">
             National Mental Health
             <br />
             Helpline: 1800-599-0019
@@ -145,7 +163,7 @@ function Footer() {
               />
             </svg>
           </div>
-          <div>
+          <div className=" tracking-wide">
             Mann Talks:
             <br />
             +91-8686139139
@@ -163,7 +181,7 @@ function Footer() {
               />
             </svg>
           </div>
-          <div>
+          <div className=" tracking-wide">
             Vandrevala Foundation:
             <br />
             +91-9999666555
@@ -181,7 +199,7 @@ function Footer() {
               />
             </svg>
           </div>
-          <div>
+          <div className=" tracking-wide">
             Sneha: +91-91675 35765 /<br />
             +91-98330 52684
           </div>
