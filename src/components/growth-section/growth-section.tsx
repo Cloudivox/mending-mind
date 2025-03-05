@@ -72,7 +72,18 @@ function GrowthSection() {
 
   // Calculate the transform value
   const getTransformValue = () => {
-    return `translateX(-${currentIndex * (100 / 3)}%)`;
+    const screenWidth = window.innerWidth;
+    let visibleCards;
+
+    if (screenWidth < 640) {
+      visibleCards = 1; // Mobile: 1 card at a time
+    } else if (screenWidth < 1024) {
+      visibleCards = 2; // Tablet: 2 cards at a time
+    } else {
+      visibleCards = 3; // Laptop/Desktop: 3 cards at a time
+    }
+
+    return `translateX(-${currentIndex * (100 / visibleCards)}%)`;
   };
 
   return (
@@ -110,7 +121,7 @@ function GrowthSection() {
             {[...cards, ...cards, ...cards].map((card, index) => (
               <div
                 key={index}
-                className="flex-none w-1/3 px-2 transform transition-transform duration-500 hover:scale-105"
+                className="flex-none w-full sm:w-full md:w-1/2 lg:w-1/3 px-2 transform transition-transform duration-500 hover:scale-105"
               >
                 <div className="bg-[#b9e3e5] rounded-lg py-3 px-4 text-center shadow-lg hover:shadow-xl transition-all">
                   <span className="text-lg font-bold text-gray-800 uppercase tracking-wide">
