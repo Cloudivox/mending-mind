@@ -1,29 +1,44 @@
-import { useEffect, useState } from "react";
-import heroSestionImage from "../../assets/images/img.png";
-import heroSectionIcon from "../../assets/images/icon-dance.png";
+// import { useEffect, useState } from "react";
+import heroSestionImage from "../../assets/images/home-page-animation.gif";
+import mobileHeroSestionImage from "../../assets/images/mobile-home-page-image2.gif";
+// import heroSectionIcon from "../../assets/images/icon-dance.png";
+import psstImage from "../../assets/images/psst-animation2.gif";
+import mobilePsstImage from "../../assets/images/mobile-psst-animation.gif";
 import smilyIcon from "../../assets/images/smily-icon.png";
 function HeroSection() {
-  const [imageLoaded, setImageLoaded] = useState(false);
-  const [contentVisible, setContentVisible] = useState(false);
+  // const [imageLoaded, setImageLoaded] = useState(false);
+  // const [contentVisible, setContentVisible] = useState(false);
 
-  useEffect(() => {
-    setImageLoaded(true);
-    const timer = setTimeout(() => {
-      setContentVisible(true);
-    }, 1000);
+  // useEffect(() => {
+  //   setImageLoaded(true);
+  //   const timer = setTimeout(() => {
+  //     setContentVisible(true);
+  //   }, 1000);
 
-    return () => clearTimeout(timer);
-  }, []);
+  //   return () => clearTimeout(timer);
+  // }, []);
   return (
-    <div className="mt-16 sm:mt-36">
+    <div className="">
       <img
         src={smilyIcon}
         alt="icon"
         className="w-10 h-10 absolute top-24 right-10 block md:hidden"
       />
-      <img src={heroSestionImage} className="w-full" alt="hero-section-image" />
-      <div className="w-full max-w-[1536px] mx-auto px-4 sm:px-4 lg:px-8 mb-16">
-        <div className="relative flex items-center justify-center py-8 sm:py-12">
+      {window.matchMedia("(max-width: 767px)").matches ? (
+        <img
+          src={mobileHeroSestionImage}
+          className="w-full h-[600px] mt-10"
+          alt="hero-section-image"
+        />
+      ) : (
+        <img
+          src={heroSestionImage}
+          className="w-full h-[900px]"
+          alt="hero-section-image"
+        />
+      )}
+      <div className="w-full max-w-[1536px] mx-auto">
+        {/* <div className="relative flex items-center justify-center py-8 sm:py-12">
           <div className="absolute left-0 w-full h-[1px] bg-black">
             <div className="relative w-full h-full">
               <div
@@ -65,7 +80,17 @@ function HeroSection() {
               />
             </div>
           </div>
-        </div>
+        </div> */}
+
+        {window.matchMedia("(max-width: 767px)").matches ? (
+          <img
+            src={mobilePsstImage}
+            className="w-full mb-16"
+            alt="hero-section-image"
+          />
+        ) : (
+          <img src={psstImage} className="w-full" alt="hero-section-image" />
+        )}
       </div>
     </div>
   );
