@@ -1,7 +1,7 @@
 import line from "../../assets/images/goal-section-line.png";
 import goal1 from "../../assets/images/goal-img-1.png";
-import goal2 from "../../assets/images/goal-img-2.png";
-import goal3 from "../../assets/images/goal-img-3.png";
+import goal2 from "../../assets/images/goal-section-img2.png";
+import goal3 from "../../assets/images/goal-section-img3.png";
 
 function GoalSection() {
   return (
@@ -24,11 +24,11 @@ function GoalSection() {
         </div>
       </div>
       <div className="min-h-screen bg-white p-8">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-7xl mx-auto">
           {/* First Row with Side Image */}
           <div className="flex flex-col md:flex-row items-end">
-            <div className="md:w-1/4">
-              <h2 className="text-2xl font-bold mb-2 font-montserrat">
+            <div className="md:w-1/4 -ms-[50px] mb-[200px]">
+              <h2 className="text-2xl font-bold font-montserrat">
                 All Inclusive?
               </h2>
               <p className="text-lg text-gray-700 relative inline-block font-montserrat">
@@ -37,19 +37,19 @@ function GoalSection() {
             </div>
 
             <div className="md:w-1/2">
-              <div className="">
+              <div className="-ms-[80px]">
                 <img
                   src={goal1}
                   alt="Inclusive community"
-                  className="w-full h-full object-cover rounded-2xl"
+                  className="w-[500px] h-[600px] object-cover rounded-2xl bg-[#fffae6]/60"
                 />
               </div>
             </div>
 
             {/* Middle Image (positioned to the right) */}
             <div className="md:w-1/2 md:mt-12">
-              <div className="text-center mb-4">
-                <h2 className="text-2xl font-bold mb-2 font-montserrat">
+              <div className="text-center">
+                <h2 className="text-2xl font-bold font-montserrat">
                   When? Where?
                 </h2>
                 <p className="text-lg text-gray-700 font-montserrat">
@@ -58,12 +58,14 @@ function GoalSection() {
                   in Mumbai.
                 </p>
               </div>
-              <div className="">
-                <img
-                  src={goal2}
-                  alt="Confidential meetings"
-                  className="w-full h-full object-cover rounded-2xl"
-                />
+              <div>
+                <div className=" bg-[#fffae6]/60 -mb-[100px] -ms-20 -px-10 rounded-[15%] z-[1]">
+                  <img
+                    src={goal2}
+                    alt="Confidential meetings"
+                    className="w-[500px] h-[600px] mt-[100px] rounded-2xl relative z-[1] bg-[#fffae6]/60"
+                  />
+                </div>
               </div>
             </div>
           </div>
@@ -80,11 +82,11 @@ function GoalSection() {
             </div>
 
             <div className="md:w-1/2">
-              <div className="">
+              <div className=" pt-10 p-5 bg-[#fffae6]/60 rounded-[15%]">
                 <img
                   src={goal3}
                   alt="Professional support"
-                  className="w-full h-full object-cover rounded-2xl"
+                  className="w-[400px] h-[500px] relative z-[1] object-cover rounded-2xl"
                 />
               </div>
             </div>
