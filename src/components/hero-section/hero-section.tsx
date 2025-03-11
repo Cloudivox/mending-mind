@@ -4,7 +4,6 @@ import mobileHeroSestionImage from "../../assets/images/mobile-home-page-image2.
 // import heroSectionIcon from "../../assets/images/icon-dance.png";
 import psstImage from "../../assets/images/psst-animation2.gif";
 import mobilePsstImage from "../../assets/images/mobile-psst-animation.gif";
-import smilyIcon from "../../assets/images/smily-icon.png";
 function HeroSection() {
   // const [imageLoaded, setImageLoaded] = useState(false);
   // const [contentVisible, setContentVisible] = useState(false);
