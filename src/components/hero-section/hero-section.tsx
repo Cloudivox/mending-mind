@@ -19,11 +19,11 @@ function HeroSection() {
   // }, []);
   return (
     <div className="">
-      <img
+      {/* <img
         src={smilyIcon}
         alt="icon"
         className="w-10 h-10 absolute top-24 right-10 block md:hidden"
-      />
+      /> */}
       {window.matchMedia("(max-width: 767px)").matches ? (
         <img
           src={mobileHeroSestionImage}
