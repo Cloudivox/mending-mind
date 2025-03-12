@@ -7,13 +7,13 @@ import CurveLine from "../../assets/images/curve-line";
 function SideBySideSection() {
   return (
     <section>
-      <div className="max-w-7xl mx-auto bg-[#fff9ea] min-h-screen px-4 py-8 md:py-16 md:px-8 lg:px-16">
+      <div className="lg:max-w-[1640px] max-w-[1200px] md:max-w-[700px] sm:max-w-[350px] mx-auto bg-[#fff9ea] min-h-screen px-4 py-8 md:py-16 md:px-8 lg:px-24">
         {/* Header */}
         <div className="text-center mb-8 md:mb-12">
-          <h1 className="text-3xl md:text-5xl font-bold mb-2 md:mb-4 tracking-wide">
+          <h1 className="text-montserrat text-[40px] lg:text-[60px] md:text-[30px] sm:text-[15px] font-semibold lg:mb-2 mb-2 md:mb-4 sm:mb-0 tracking-wide">
             READY TO BEGIN?
           </h1>
-          <p className="text-3xl md:text-3xl font-normal italic tracking-wide font-playfair">
+          <p className="text-[10px] lg:text-[40px] md:text-[20px] sm:text-[10px] italic tracking-wide font-playfair">
             just follow these easy steps:
           </p>
           <span className="flex justify-center">
@@ -26,7 +26,7 @@ function SideBySideSection() {
           <img
             src={sideSectionImage}
             alt="sidesection"
-            className="max-w-[500px] h-full w-full sm:h-48 sm:w-48 md:h-72 md:w-72 lg:h-full lg:w-full"
+            className="sm:ms-16  max-w-[500px] h-full w-full sm:h-full sm:w-40 md:h-72 md:w-72 lg:h-full lg:w-full"
           />
 
           {/* Steps - Different layout for mobile and desktop */}
