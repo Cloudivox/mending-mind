@@ -45,14 +45,14 @@ function App() {
                     : ""
                 }`}
               >
-                <div className="md:hidden">
+                <div className="md:hidden sm:-mb-2">
                   <button onClick={toggleMenu} className="text-primary-black">
-                    <div className="w-6 h-6 flex items-center justify-center">
+                    <div className="w-5 h-4 flex items-center justify-center">
                       <div className={`menu-icon ${isOpen ? "open" : ""}`}>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                      </div>
+                          <span></span>
+                          <span></span>
+                          <span></span>
+                        </div>
                     </div>
                   </button>
                 </div>
@@ -67,19 +67,19 @@ function App() {
                   <Link to="/" className="flex items-center">
                     <img
                       src={logo}
-                      className="h-16 w-full sm:h-10 md:h-16 lg:h-16"
+                      className="h-16 w-full sm:h-6 md:h-16 lg:h-16"
                       alt="logo"
                       title="logo"
                     />
                   </Link>
                 </div>
               </div>
-              <button className="md:hidden bg-primary-yellow text-primary-black px-2 py-1 rounded-md font-montserrat text-[8px] hover:bg-primary-black hover:text-primary-yellow transition-colors">
+              <button className="md:hidden bg-primary-yellow text-primary-black px-2 py-1 rounded-sm font-montserrat text-[4px] font-medium hover:bg-primary-black hover:text-primary-yellow transition-colors">
                 LET'S TALK
               </button>
             </div>
             {/* Desktop Navigation */}
-            <div className="hidden md:flex items-center space-x-24 lg:space-x-24 md:space-x-2">
+            <div className="hidden md:flex items-center justify-center space-x-28 lg:space-x-28 md:space-x-2 sm:space-x-2">
               <a
                 href="/"
                 className="relative font-montserrat text-md font-medium text-primary-black hover:text-primary-black transition-colors ms-16 lg:ms-16 md:ms-5
