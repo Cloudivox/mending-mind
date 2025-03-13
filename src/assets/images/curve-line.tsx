@@ -1,7 +1,7 @@
 function CurveLine() {
   return (
     <svg
-    className="ms-56 sm:ms-16 md:ms-16 lg:ms-76"
+    className="ms-[300px] sm:ms-16 md:ms-16 lg:ms-[330px]"
       version="1.2"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 190 28"

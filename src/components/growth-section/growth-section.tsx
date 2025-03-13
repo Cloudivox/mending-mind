@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState, useRef } from "react";
+import GrowthSectionHeadingImg from "../../assets/images/growth-section-heading-img.png";
 
 function GrowthSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -87,24 +88,14 @@ function GrowthSection() {
   };
 
   return (
-    <div className="w-full max-w-6xl mx-auto px-4 py-8 md:py-12 mt-32">
-      <div className="max-w-3xl mx-auto text-center">
-        <p className="text-5xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6 flex items-center justify-center">
-          <span className="mr-3 tracking-wide">PROMISING</span>
-          <span className="bg-[#99b5b4] text-white px-2 py-1 rounded-md tracking-wide">
-            GROWTH
-          </span>
-        </p>
-
-        <div className="relative">
-          <p className="text-3xl lg:text-3xl md:text-2xl sm:text-lg font-playfair italic tracking-wide">
-            since day One
-          </p>
-        </div>
-      </div>
-
+    <div className="px-4 py-8 md:py-12 overflow-hidden">
+      <img
+        src={GrowthSectionHeadingImg}
+        alt="heading-img"
+        className="block w-full max-w-[90%] sm:max-w-[85%] md:max-w-[80%] lg:max-w-[80%] xl:max-w-[70%] ml-auto -mr-12 lg:-mr-12 md:-mr-10 sm:-mr-7"
+      />
       <div
-        className="relative max-w-4xl mx-auto px-12 my-20"
+        className="relative mx-auto px-16 my-10 lg:my-10 md:my-8 sm:my-5"
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
       >
@@ -121,10 +112,10 @@ function GrowthSection() {
             {[...cards, ...cards, ...cards].map((card, index) => (
               <div
                 key={index}
-                className="flex-none w-full sm:w-full md:w-1/2 lg:w-1/3 px-2 transform transition-transform duration-500 hover:scale-105"
+                className="flex-none w-full sm:w-full md:w-1/2 lg:w-1/3 px-5 transform transition-transform duration-500 hover:scale-105"
               >
-                <div className="bg-[#b9e3e5] rounded-lg py-3 px-4 text-center shadow-lg hover:shadow-xl transition-all">
-                  <span className="text-lg font-bold text-gray-800 uppercase tracking-wide">
+                <div className="bg-[#b9e3e5] rounded-lg py-8 px-4 lg:py-8 lg:px-4 md:py-5 md:px-2 sm:py-1 sm:px-0.5 text-center shadow-lg hover:shadow-xl transition-all">
+                  <span className="text-[30px] lg:text-[30px] md:text-[20px] sm:text-[10px] font-bold text-gray-800 uppercase tracking-wide">
                     {card.text}
                   </span>
                 </div>
@@ -143,7 +134,7 @@ function GrowthSection() {
             width="32"
             height="32"
             viewBox="0 0 24 24"
-            className="transform transition-transform duration-300 hover:scale-110"
+            className="transform transition-transform duration-300 hover:scale-110 h-16 w-16 md:h-12 md:w-12 sm:h-6 sm:w-6 lg:h-16 lg:w-16"
           >
             <path
               fill="currentColor"
@@ -162,7 +153,7 @@ function GrowthSection() {
             width="32"
             height="32"
             viewBox="0 0 24 24"
-            className="transform transition-transform duration-300 hover:scale-110"
+            className="transform transition-transform duration-300 hover:scale-110 h-16 w-16 md:h-12 md:w-12 sm:h-6 sm:w-6 lg:h-16 lg:w-16"
           >
             <path
               fill="currentColor"
@@ -172,15 +163,15 @@ function GrowthSection() {
         </button>
       </div>
 
-      <div className="flex justify-center items-center">
-        <button className=" tracking-wide inline-flex items-center justify-between px-6 py-3 bg-[#efc345] text-gray-900 rounded-lg font-bold text-l tracking-wide shadow-md hover:bg-black hover:text-[#efc345]">
+      <div className="flex justify-center items-center my-32 lg:my-32 md:my-20 sm:my-5">
+        <button className="bg-[#efc345] text-black px-10 lg:px-10 md:px-6 sm:px-3 py-3 md:py-2 sm:py-0.5 lg:py-3 rounded-lg font-semibold text-[35px] lg:text-[35px] md:text-[20px] sm:text-[10px] hover:bg-[#E3B52D] transition-colors flex items-center gap-8 lg:gap-8 md:gap-5 sm:gap-2 hover:bg-black hover:text-[#efc345]">
           GET TO KNOW US BETTER
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="32"
             height="32"
             viewBox="0 0 24 24"
-            className="transform transition-transform duration-300 hover:scale-110"
+            className="transform transition-transform duration-300 group-hover:translate-x-1 w-[60px] h-[60px] lg:w-[60px] lg:h-[60px] md:w-[20px] md:h-[20px] sm:w-[20px] sm:h-[20px]"
           >
             <path
               fill="currentColor"
