@@ -1,12 +1,13 @@
-import line from "../../assets/images/goal-section-line.png";
+// import line from "../../assets/images/goal-section-line.png";
 import goal1 from "../../assets/images/goal-img-1.png";
 import goal2 from "../../assets/images/goal-section-img2.png";
 import goal3 from "../../assets/images/goal-section-img3.png";
+import GoalSectionHeadingImg from "../../assets/images/goal-heading-img.svg"
 
 function GoalSection() {
   return (
     <div className="container md:mx-auto md:px-4 md:py-16 md:mt-16">
-      <div className="max-w-3xl mx-auto text-center">
+      {/* <div className="max-w-3xl mx-auto text-center">
         <p className="text-5xl sm:text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-6 flex items-center justify-center">
           <span className="mr-3">OUR</span>
           <span className="bg-[#99b5b4] px-2 py-1 rounded-md">GOAL</span>
@@ -22,7 +23,12 @@ function GoalSection() {
             <img src={line} alt="line" />
           </div>
         </div>
-      </div>
+      </div> */}
+       <img
+        src={GoalSectionHeadingImg}
+        alt="heading-img"
+        className="block w-full max-w-[90%] sm:max-w-[85%] md:max-w-[80%] lg:max-w-[80%] xl:max-w-[70%] ml-auto -mr-12 lg:-mr-12 md:-mr-10 sm:-mr-7"
+      />
       <div className="min-h-screen bg-white p-8">
         <div className="max-w-7xl mx-auto">
           {/* First Row with Side Image */}
