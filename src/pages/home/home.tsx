@@ -23,7 +23,6 @@ function Home() {
         alt="icon"
         className="z-[9999] fixed bottom-10 right-10 w-14 h-14 md:w-16 md:h-16 cursor-pointer hover:scale-110 transition-transform"
       />
-
       <Footer />
     </div>
   );

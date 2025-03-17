@@ -49,10 +49,10 @@ function App() {
                   <button onClick={toggleMenu} className="text-primary-black">
                     <div className="w-5 h-4 flex items-center justify-center">
                       <div className={`menu-icon ${isOpen ? "open" : ""}`}>
-                          <span></span>
-                          <span></span>
-                          <span></span>
-                        </div>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
                     </div>
                   </button>
                 </div>
@@ -88,35 +88,35 @@ function App() {
                 HOME
               </a>
               <a
-                href="/about"
+                href="/"
                 className="relative font-montserrat text-md font-medium text-primary-black hover:text-primary-black transition-colors 
               before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-primary-yellow before:transition-all before:duration-300 hover:before:w-full tracking-wide"
               >
                 ABOUT
               </a>
               <a
-                href="/services"
+                href="/"
                 className="relative font-montserrat text-md font-medium text-primary-black hover:text-primary-black transition-colors 
               before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-primary-yellow before:transition-all before:duration-300 hover:before:w-full tracking-wide"
               >
                 OUR SERVICES
               </a>
               <a
-                href="/corporate"
+                href="/"
                 className="relative font-montserrat text-md font-medium text-primary-black hover:text-primary-black transition-colors 
               before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-primary-yellow before:transition-all before:duration-300 hover:before:w-full tracking-wide"
               >
                 CORPORATE
               </a>
               <a
-                href="/merch"
+                href="/"
                 className="relative font-montserrat text-md font-medium text-primary-black hover:text-primary-black transition-colors 
               before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-primary-yellow before:transition-all before:duration-300 hover:before:w-full tracking-wide"
               >
                 MENDING MERCH
               </a>
               <a
-                href="/resources"
+                href="/"
                 className="relative font-montserrat text-md font-medium text-primary-black hover:text-primary-black transition-colors 
               before:absolute before:bottom-0 before:left-0 before:w-0 before:h-[2px] before:bg-primary-yellow before:transition-all before:duration-300 hover:before:w-full tracking-wide"
               >
@@ -146,31 +146,31 @@ function App() {
                   HOME
                 </a>
                 <a
-                  href="/about"
+                  href="/"
                   className="font-montserrat text-md font-medium text-black tracking-wide"
                 >
                   ABOUT
                 </a>
                 <a
-                  href="/services"
+                  href="/"
                   className="font-montserrat text-md font-medium text-black tracking-wide"
                 >
                   OUR SERVICES
                 </a>
                 <a
-                  href="/corporate"
+                  href="/"
                   className="font-montserrat text-md font-medium text-black tracking-wide"
                 >
                   CORPORATE
                 </a>
                 <a
-                  href="/merch"
+                  href="/"
                   className="font-montserrat text-md font-medium text-black tracking-wide"
                 >
                   MENDING MERCH
                 </a>
                 <a
-                  href="/resources"
+                  href="/"
                   className="font-montserrat text-md font-medium text-black tracking-wide"
                 >
                   RESOURCES

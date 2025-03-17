@@ -11,7 +11,7 @@ function TherapySection() {
         <div className="bg-[#efc345] pt-5 pb-10 ps-10 pe-10">
           <div className="max-w-2xl mx-auto relative">
              {/* Decorative quote mark */}
-             <div className="absolute -top-8 -right-12 w-24 h-24 z-10">
+             <div className="absolute -top-8 inset-x-40 flex justify-end w-24 h-24 z-10">
               <img
                 src={quote}
                 alt=""

@@ -26,7 +26,7 @@ function HeroSection() {
       {window.matchMedia("(max-width: 767px)").matches ? (
         <img
           src={mobileHeroSestionImage}
-          className="-full h-auto max-h-[900px] object-contain"
+          className="w-full h-auto max-h-[900px] object-contain"
           alt="hero-section-image"
         />
       ) : (
@@ -84,11 +84,11 @@ function HeroSection() {
         {window.matchMedia("(max-width: 767px)").matches ? (
           <img
             src={mobilePsstImage}
-            className="w-full h-auto max-h-[900px] object-contain"
+            className="w-full h-auto max-h-[900px] object-contain mb-8"
             alt="hero-section-image"
           />
         ) : (
-          <img src={psstImage} className="w-full h-auto max-h-[900px] object-contain" alt="hero-section-image" />
+          <img src={psstImage} className="w-full h-auto max-h-[900px] object-contain mb-16" alt="hero-section-image" />
         )}
       </div>
     </div>
