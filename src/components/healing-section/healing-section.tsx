@@ -84,7 +84,10 @@ export default function HealingSection() {
           </span>
         </div>
 
-        <p className="text-[25px] lg:text-[25px] md:text-sm sm:text-[9px] md:text-base lg:text-lg text-center max-w-[900px] sm:max-w-[540px] md:max-w-[720px] lg:max-w-[1000px] mx-auto leading-relaxed text-gray-700 font-monterrat tracking-wide font-montserrat whitespace-pre-line">
+        <p
+          className="text-[25px] lg:text-[25px] md:text-sm sm:text-[9px] text-center max-w-[900px] sm:max-w-[280px] md:max-w-[720px] lg:max-w-[1000px] mx-auto leading-relaxed text-gray-700 font-monterrat tracking-wide font-montserrat whitespace-pre-line"
+          style={{ lineHeight: 1.2 }}
+        >
           When we say, 'We get you,' we truly mean it. Mending Mind isn't just a
           project—it's a vision that's personal, real, and rooted in the belief
           that no one should ever feel alone in their journey. Because everybody
